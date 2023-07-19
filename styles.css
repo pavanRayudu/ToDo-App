@@ -165,3 +165,43 @@ main {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.5);
 }
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .container {
+    width: 350px;
+    margin-top: 10px;
+  }
+  form {
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+  }
+  form #add_btn {
+    width: 100px;
+  }
+
+  .task_controls {
+    width: 25%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    margin-left: 10px;
+  }
+
+  .task_controls button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    transform: scale(1);
+  }
+  .task_controls button i {
+    transform: scale(0.8);
+  }
+}
+
+
+
